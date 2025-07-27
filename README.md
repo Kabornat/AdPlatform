@@ -1,7 +1,10 @@
 AdPlatform
 
 **Запуск**
-- dotnet run в корне проекта (AdPlatform/AdPlatform)
+- Ввести в командной строке dotnet run в корне проекта (AdPlatform/AdPlatform)
+- - Примеры:
+  - Открыть через Visual Studio и введя в консоли
+  - Через Shift + ПКМ -> Открыть окно PowerShell/команд здесь
 - Зайти на http://localhost:5228/swagger
 
 **Как произвести поиск платформы** 
