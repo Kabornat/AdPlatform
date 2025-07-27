@@ -1,13 +1,12 @@
 AdPlatform
 
 **Запуск**
-- Запуск тестов - dotnet test
-- Запуск проекта - dotnet run
+- Запуск тестов - dotnet test (в AdPlatform)
+- Запуск проекта - dotnet run (в AdPlatform/AdPlatform)
 
-**Команды необходимо ввести в корне проекта (AdPlatform/AdPlatform)**
-- Примеры:
-  - Открыть через Visual Studio и введя в консоли
-  - Через Shift + ПКМ -> Открыть окно PowerShell/команд здесь
+**Куда вводить команды, примеры**
+- Через Shift + ПКМ -> Открыть окно PowerShell/команд здесь
+- Открыть через Visual Studio и введя в консоли
     
 **После запуска проекта**
 - Зайти на http://localhost:5228/swagger
