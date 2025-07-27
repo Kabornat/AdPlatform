@@ -15,7 +15,7 @@ public class AdPlatformController(AdPlatformRepository adPlatformRepository) : C
         if (string.IsNullOrEmpty(location))
             return BadRequest("Не указана локация для поиска");
 
-        var platforms = _adPlatformRepository.GetByLocation(location);
+        var platforms = _adPlatformRepository.SearchPlatform(location);
 
         return Ok(platforms);
     }

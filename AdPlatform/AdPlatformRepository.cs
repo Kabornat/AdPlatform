@@ -7,7 +7,7 @@ public class AdPlatformRepository
     private readonly ConcurrentDictionary<string, string> _platformsByLocation = [];
     public const string FileName = "adPlatfoms.txt";
 
-    public List<string> GetByLocation(string searchLocation)
+    public List<string> SearchPlatform(string searchLocation)
     {
         var result = new List<string>();
 
@@ -48,7 +48,14 @@ public class AdPlatformRepository
     {
         _platformsByLocation.Clear();
 
-        foreach (var line in await File.ReadAllLinesAsync(FileName))
+        var lines = await File.ReadAllLinesAsync(FileName);
+
+        return LoadFromLines(lines);
+    }
+
+    public string LoadFromLines(string[] lines)
+    {
+        foreach (var line in lines)
         {
             var platformAndLocation = line.Split(':');
 
